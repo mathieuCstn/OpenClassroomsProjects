@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: #F2F2F2;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+h1 {
+    font-size: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+h1::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 7px;
+    background-color: #F2F2F2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease-out;
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+}
